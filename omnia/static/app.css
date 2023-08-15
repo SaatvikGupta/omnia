@@ -1,0 +1,97 @@
+/* Reset some default styles */
+body, h1, p, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color for the entire page */
+html {
+    background-color: #FFDAB9; /* Peach and skin color */
+}
+
+/* Center the content vertically and horizontally */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align content at the top */
+    height: 100vh; /* Use height to center content vertically */
+}
+
+/* Style the form */
+#signup-form {
+    max-width: 400px;
+    width: 100%; /* Make the form take the full width */
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Center the form */
+    border-radius: 10px; /* Add rounded corners */
+}
+
+/* Style form elements */
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in element's total width */
+    margin-bottom: 10px; /* Add space between input fields */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus {
+    outline: none; /* Remove default outline on focus */
+    border-color: #007bff; /* Change border color on focus */
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    width: 100%; /* Make the button take the full width */
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style the header */
+.header {
+    text-align: center;
+    margin-top: 20px; /* Adjust margin for spacing */
+}
+
+.header img {
+    max-width: 500px; /* Adjust the size as needed */
+}
+
+.slogan {
+    font-size: 24px; /* Increase the font size */
+    font-weight: bold; /* Bolden the slogan */
+    color: #FF6347; /* Light red color */
+    margin-top: 10px; /* Adjust margin for spacing */
+}
+
+/* Responsive styling */
+@media screen and (max-width: 480px) {
+    #signup-form {
+        max-width: 100%;
+    }
+}
